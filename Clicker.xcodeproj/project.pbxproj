@@ -13,6 +13,7 @@
 		5664087A2B97BF6C0025E6B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 566408782B97BF6C0025E6B0 /* Main.storyboard */; };
 		5664087C2B97BF6D0025E6B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5664087B2B97BF6D0025E6B0 /* Assets.xcassets */; };
 		5664087F2B97BF6D0025E6B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5664087D2B97BF6D0025E6B0 /* LaunchScreen.storyboard */; };
+		56EA7A402BA25E7C00EED483 /* obamna.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 56EA7A3E2BA25E7C00EED483 /* obamna.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		5664087B2B97BF6D0025E6B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5664087E2B97BF6D0025E6B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		566408802B97BF6D0025E6B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56EA7A3E2BA25E7C00EED483 /* obamna.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = obamna.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,10 +63,19 @@
 				566408762B97BF6C0025E6B0 /* ViewController.swift */,
 				566408782B97BF6C0025E6B0 /* Main.storyboard */,
 				5664087B2B97BF6D0025E6B0 /* Assets.xcassets */,
+				56EA7A3F2BA25E7C00EED483 /* Sounds */,
 				5664087D2B97BF6D0025E6B0 /* LaunchScreen.storyboard */,
 				566408802B97BF6D0025E6B0 /* Info.plist */,
 			);
 			path = Clicker;
+			sourceTree = "<group>";
+		};
+		56EA7A3F2BA25E7C00EED483 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				56EA7A3E2BA25E7C00EED483 /* obamna.mp3 */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +138,7 @@
 			files = (
 				5664087F2B97BF6D0025E6B0 /* LaunchScreen.storyboard in Resources */,
 				5664087C2B97BF6D0025E6B0 /* Assets.xcassets in Resources */,
+				56EA7A402BA25E7C00EED483 /* obamna.mp3 in Resources */,
 				5664087A2B97BF6C0025E6B0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

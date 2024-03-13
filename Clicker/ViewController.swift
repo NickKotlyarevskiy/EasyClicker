@@ -6,12 +6,17 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
+    var player: AVAudioPlayer!
     var resultCounter = 0
     var clickPrice = 1
     var actualCount: Float = 0.0
     
+    let url = Bundle.main.url(forResource: "obamna", withExtension: "mp3")
+    
+    @IBOutlet weak var coinImage: UIImageView!
     @IBOutlet weak var resultView: UILabel!
     @IBOutlet weak var clickButton: UIButton!
     @IBOutlet weak var plusOneClick: UIButton!
@@ -24,6 +29,12 @@ class ViewController: UIViewController {
     }
     
     @IBAction func ButtonClicked(_ sender: UIButton) {
+        player = try! AVAudioPlayer(contentsOf: url!)
+        player.play()
+        coinImage.alpha = 0.5
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+            self.coinImage.alpha = 1
+        }
         resultCounter += clickPrice
         resultView.text = String(resultCounter)
     }
@@ -56,7 +67,7 @@ class ViewController: UIViewController {
     }
     
     func updateUI() {
-        resultCounter = 101
+        resultCounter = 0
         resultView.text = String(resultCounter)
         
     }
